@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img src="./images/logo.svg" alt="logo">
+  <main>
+    <section class="inputs-section">
+      <h2>Bill</h2>
+      <img class="icon-input" src="./images/icon-dollar.svg" alt="icon dollar">
+      <input id="bill-input" class="inputs-user" type="number" placeholder="0">
+      <h2>Select Tip %</h2>
+      <div class="tips-container">
+        <button value="5">5%</button>
+        <button value="10">10%</button>
+        <button value="15">15%</button>
+        <button value="25">25%</button>
+        <button value="50">50%</button>
+        <input id="tip-input" type="number" placeholder="Custom">
+      </div>
+      <div class="people-div">
+        <h2>Number of People</h2>
+        <p class="invalid-message"></p>
+      </div>
+      <img class="icon-input" src="./images/icon-person.svg" alt="icon person">
+      <input id="people-input" class="inputs-user" type="number" placeholder="0">
+    </section>
+    <section class="results">
+      <p>Tip Amount <br />
+        <span>/ person</span>
+      </p>
+      <p class="amount">$0.00</p>
+      <p>Total <br />
+        <span>/ person</span>
+      </p>
+      <p class="total">$0.00</p>
+      <button class="resetBtn">RESET</button>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
